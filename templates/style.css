@@ -1,0 +1,11 @@
+div {
+    background-color: dodgerblue;
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-color: navy;
+}
+
+body {
+    background-color: green;
+}
