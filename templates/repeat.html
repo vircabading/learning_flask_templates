@@ -9,16 +9,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .blue-box {
+            background-color: dodgerblue;
+            height: 100px;
+            width: 100px;
+            border-style: none;
+            border-radius: 10px;
+        }
+    </style>
+
     <title>Flask Template</title>
 </head>
 
 <!--//// BODY ////////////////////////////////////////-->
 <body>
-    <h2>{{ message }}</h2>
-    <p>{{ iterations }}</p>
-    {% for idx in range(iterations) %}
-    <p> {{message}} </p>
-    {% endfor %}
+    <div class="blue-box"></div>
 </body>
 </html>
