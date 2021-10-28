@@ -11,8 +11,12 @@ app = Flask(__name__)                                   # Create a new instance 
 def index():
     return render_template('index.html')
 
-# **** Ensure that if the user types in any route other than the ones specified, 
-#           they receive an error message saying "Sorry! No response. Try again ****
+# **** Create a route that responds with the given word repeated as many times as specified in the URL ****
+@app.route('/repeat/<int:iterations>/<string:message>')
+def repeat_message (iterations, message):
+    return render_template('repeat.html', message=message, iterations=iterations)
+
+# **** Handle invalid routes ******************************************
 @app.errorhandler(404) 
 def invalid_route(e): 
     return "Sorry! No response. Try again."

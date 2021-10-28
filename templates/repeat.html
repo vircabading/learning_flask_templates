@@ -15,6 +15,10 @@
 
 <!--//// BODY ////////////////////////////////////////-->
 <body>
-    <h1>Hello Flask</h1>
+    <h2>{{ message }}</h2>
+    <p>{{ iterations }}</p>
+    {% for idx in range(iterations) %}
+    <p> {{message}} </p>
+    {% endfor %}
 </body>
 </html>
